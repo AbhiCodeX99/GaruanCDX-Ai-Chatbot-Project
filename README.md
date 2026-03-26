@@ -1,20 +1,97 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚀 GaruanCDX AI Chatbot
 
-# Run and deploy your AI Studio app
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Project](https://img.shields.io/badge/Project-AI%20Chatbot-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-This contains everything you need to run your app locally.
+> AI chatbot project built as part of my learning journey, focusing on real-world implementation, clean code structure, and practical problem-solving.
 
-View your app in AI Studio: https://ai.studio/apps/716a8d94-9202-4476-a2a3-d82cf57d934c
+---
 
-## Run Locally
+## 🧠 About the Project
+GaruanCDX AI Chatbot is a student-built project developed to understand how intelligent chatbot systems work in real-world scenarios.  
+It focuses on building a responsive and interactive chatbot using modern technologies and clean development practices.
 
-**Prerequisites:**  Node.js
+---
 
+## ✨ Features
+- 💬 Interactive chatbot interface  
+- ⚡ Fast and responsive performance  
+- 🧠 Context-based conversation handling  
+- 🔗 API integration ready  
+- 📂 Clean and structured codebase  
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Node.js / Python  
+- **AI Logic:** API-based / NLP  
+- **Tools:** Git & GitHub  
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone  https://github.com/AbhiCodeX99/GaruanCDX-Ai-Chatbot-Project.git
+cd GaruanCDX-AI-Chatbot
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+# For Node.js
+npm install
+npm start
+
+# OR for Python
+pip install -r requirements.txt
+python app.py
+```
+
+---
+
+## 📂 Project Structure
+
+```
+GaruanCDX-AI-Chatbot/
+│── src/
+│── public/
+│── api/
+│── models/
+│── README.md
+```
+
+---
+
+## 🎯 Learning Outcomes
+- Understanding of chatbot system design  
+- Hands-on experience with backend development  
+- Improved problem-solving and coding practices  
+- Real-world project development experience  
+
+---
+
+## 🚀 Future Improvements
+- 🎤 Voice-based interaction  
+- 🌍 Multi-language support  
+- 📱 Mobile responsiveness  
+- 🤖 Advanced AI capabilities  
+
+---
+
+## 🤝 Contributing
+This is a personal learning project. Suggestions and improvements are always welcome.
+
+---
+
+## 📜 License
+This project is open-source and available under the MIT License.
+
+---
+
+## ⭐ Support
+If you like this project, consider giving it a star ⭐ on GitHub!
