@@ -1,0 +1,5 @@
+{
+  "name": "GaruanCDX AI Knowledge Assistant",
+  "description": "A professional 3D-powered AI assistant for internal and client-facing knowledge management, document analysis, and troubleshooting.",
+  "requestFramePermissions": ["camera", "microphone"]
+}

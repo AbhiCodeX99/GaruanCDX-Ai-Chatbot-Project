@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "Stores user profile information and onboarding status.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "username": { "type": "string", "description": "Chosen username" },
+        "age": { "type": "number", "description": "User's age" },
+        "country": { "type": "string", "description": "User's country" },
+        "birthday": { "type": "string", "description": "User's birthday (ISO string)" },
+        "email": { "type": "string", "description": "User's email" },
+        "onboarded": { "type": "boolean", "description": "Whether onboarding is complete" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Account creation time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "chats": {
+      "title": "Chat Session",
+      "description": "Stores chat history for each user.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner's UID" },
+        "title": { "type": "string", "description": "Chat title" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation time" },
+        "lastMessageAt": { "type": "string", "format": "date-time", "description": "Last message time" }
+      },
+      "required": ["userId", "title"]
+    },
+    "messages": {
+      "title": "Chat Message",
+      "description": "Individual messages within a chat session.",
+      "type": "object",
+      "properties": {
+        "chatId": { "type": "string", "description": "Parent chat ID" },
+        "role": { "type": "string", "enum": ["user", "model"], "description": "Sender role" },
+        "content": { "type": "string", "description": "Message text" },
+        "fileUrl": { "type": "string", "description": "Optional attached file URL" },
+        "fileName": { "type": "string", "description": "Optional attached file name" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Message time" }
+      },
+      "required": ["chatId", "role", "content"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User profile data"
+    },
+    "/chats/{chatId}": {
+      "schema": "chats",
+      "description": "Chat session metadata"
+    },
+    "/chats/{chatId}/messages/{messageId}": {
+      "schema": "messages",
+      "description": "Messages in a chat session"
+    }
+  }
+}
